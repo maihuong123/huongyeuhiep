@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <title>Movie</title>
 </head>
-<body> <h1>civil war</h1>
-<img src="http://media.comicbook.com/2016/04/civil-war-cap-tony-179110.jpg" />
+<body>
+{% for movie in movie_list %}
 
+    <h1>{{ movie.title }}</h1>
+    <img src="{{ movie.img }}" />
+
+{% endfor %}
 </body>
 </html>
